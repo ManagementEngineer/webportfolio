@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Grid, Typography, keyframes } from '@mui/material';
+import TextDecrypt from '../Utilities/TextDecrypt';
 
 const Header = (props) => {
     const [animate, setAnimate] = useState(false);
@@ -39,13 +40,7 @@ const Header = (props) => {
     return (
         <>
             <Grid sx={{ minHeight: '15vh', paddingTop: 0, paddingBottom: 2, justifyContent: 'left', alignItems: 'center', display: 'flex', background: `linear-gradient(135deg, #A67D01, #CFAB38, #F8F0C9, #F6F9FC, #C8CACA, #A9AAAE)`, backgroundSize: '400% 400%', animation: `${gradient} 10s ease infinite` }} >
-                <Typography variant='h2' component='div' align='center'
-                    sx={{
-                        fontWeight: 600,
-                        animation: `${trackingInExpand} 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both`
-                    }}>
-                    {props.title}
-                </Typography>
+                <TextDecrypt text={props.title} variant='h2' align='left' />
             </Grid>
         </>
     )
