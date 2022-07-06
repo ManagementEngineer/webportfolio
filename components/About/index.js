@@ -1,12 +1,9 @@
 import Header from "../Header";
 
-const About = () => {
+const About = (props) => {
     return (
         <>
-            <section id="#about">
-                <Header title='About Me' />
-
-            </section>
+            <Header title='About Me' />
         </>
     )
 };

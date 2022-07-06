@@ -9,10 +9,9 @@ import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
 const PortfolioCard = (props) => {
     return (
-        <Card sx={{ maxWidth: '100%' }}>
+        <Card>
             <CardMedia
                 component="img"
-                height="80%"
                 image={props.image}
                 alt={props.title}
             />
