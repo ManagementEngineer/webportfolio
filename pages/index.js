@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { Grid, Typography, Box, Container } from "@mui/material";
+import { Grid, Typography, Box, Container, Link, Button } from "@mui/material";
 import MurakamiFlower from "../components/MurakamiFlower";
 import TextDecrypt from "../components/Utilities/TextDecrypt";
 import About from './about';
@@ -8,34 +8,48 @@ import Cloud from '../components/Cloud';
 import IndexArt from '../components/IndexArt/IndexArt';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
+import { useTheme } from '@mui/material/styles';
+
 
 
 export default function App() {
-
+  const theme = useTheme();
 
   return (
     <>
-      <Grid container sx={{ minHeight: '100vh', minWidth: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#ecedef', padding: 3 }}>
-        <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <TextDecrypt text='Hi, Im Ramuel, Web Developer.' variant='h2' />
-        </Grid>
-        <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flex: 1, position: 'relative' }} layoutId='flower' component={motion.div}>
-          <Box sx={{ zIndex: 1, justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
-            {/* <MurakamiFlower viewbox='0 0 360 360' overflow='visible' /> */}
-            <IndexArt id='flower' />
-          </Box>
-        </Grid>
-      </Grid >
-      <Container>
-        <Grid container>
-          <Grid item>
-            <Header title='About Me' />
-
+      <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
+        <section id="home">
+          <Container>
+            <Grid item xs={12}>
+              <Typography variant='h6'>
+                Hi, my name is
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant='h2'>Ramuel Batuigas</Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant='h3'>
+                I build things for the web.
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant='h6'>
+                I'm a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering'>Management Engineer</Link> with a knack of creating tools to make life easier.
+              </Typography>
+            </Grid>
+            <Button variant='contained'>Contact Me</Button>
+            <Button variant='outlined'>Dowload My Resume</Button>
+          </Container>
+        </section>
+      </Grid>
+      <section id="about">
+        <Container>
+          <Grid container xs={12}>
+            <Header title='About Me'></Header>
           </Grid>
-        </Grid>
-      </Container>
-
+        </Container>
+      </section>
     </>
-
   );
 }
