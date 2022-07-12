@@ -144,7 +144,7 @@ const Sidebar = (props) => {
                         </Link>
 
                         {/* -----------------------------------Contact Petal----------------------------------- */}
-                        <Link href='/engineering'>
+                        <Link href='/contact'>
                             <motion.g
                                 whileHover={{
                                     // x: -120,

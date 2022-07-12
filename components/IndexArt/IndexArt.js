@@ -141,6 +141,7 @@ const IndexArt = (props) => {
                         {/* ----------------------------About Petal---------------------------- */}
                         <Link href='/about'>
                             <motion.g
+                                layoutId='about'
                                 whileHover={{
                                     x: 120,
                                     scale: 1.5,

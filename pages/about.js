@@ -1,21 +1,29 @@
 import Header from "../components/Header";
-import { Grid, Box } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 import MurakamiFlower from "../components/MurakamiFlower";
 import { motion } from "framer-motion";
+import Sidebar from "../components/Sidebar";
 
 const About = (props) => {
     return (
         <>
-            <Grid container sx={{ height: '100vh', width: '100vw', flexDirection: 'row', backgroundColor: 'teal' }} component={motion.div}>
-                <Grid item xl={3}>
-                    <Box xs={12} sx={{ height: '100%', width: '100%', position: 'absolute' }} layoutId='flower' component={motion.div}>
-                        <MurakamiFlower viewBox='0 0 180 180' overflow='hidden' />
-                    </Box>
+            <>
+                <Grid container spacing={2} component={motion.div} layoutId='about'>
+                    <Grid item xs={4}>
+                        <Sidebar />
+                    </Grid>
+                    <Grid item xs={8} sx={{ background: '#febe4e' }}>
+                        <Grid container>
+                            <Grid item xs={12} sx={{ padding: 2 }}>
+                                <Header title='About Me' />
+                            </Grid>
+                            <Grid item>
+                                <Typography>kahsdkjbakjdbaksda</Typography>
+                            </Grid>
+                        </Grid>
+                    </Grid>
                 </Grid>
-                <Grid item xl={9}>
-
-                </Grid>
-            </Grid>
+            </>
         </>
     )
 };
