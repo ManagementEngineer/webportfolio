@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Grid, Typography, keyframes } from '@mui/material';
-import TextDecrypt from '../Utilities/TextDecrypt';
 
 const Header = (props) => {
   const [animate, setAnimate] = useState(false);
@@ -39,7 +38,7 @@ const Header = (props) => {
 
   return (
     <>
-      <TextDecrypt text={props.title} variant='h2' align='left' />
+      <Typography text={props.title} variant='h6' align='left' />
     </>
   )
 

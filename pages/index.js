@@ -3,53 +3,57 @@ import { AnimateSharedLayout, motion } from "framer-motion";
 import { Grid, Typography, Box, Container, Link, Button } from "@mui/material";
 import MurakamiFlower from "../components/MurakamiFlower";
 import TextDecrypt from "../components/Utilities/TextDecrypt";
-import About from './about';
+
 import Cloud from '../components/Cloud';
 import IndexArt from '../components/IndexArt/IndexArt';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import { useTheme } from '@mui/material/styles';
+import Home from '../components/Home';
+import About from '../components/About';
+import Portfolio from '../components/Portfolio';
+import Engineering from '../components/Engineering';
 
 
 
-export default function App() {
+const App = () => {
   const theme = useTheme();
 
   return (
     <>
-      <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
-        <section id="home">
-          <Container>
-            <Grid item xs={12}>
-              <Typography variant='h6'>
-                Hi, my name is
-              </Typography>
+      <Grid container >
+        <Grid item xs={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <Box sx={{ position: 'fixed' }}>
+            <Typography>Sidebar 1</Typography>
+          </Box>
+
+        </Grid>
+        <Grid item xs={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
+          <Grid container>
+            <Grid item>
+              <Home />
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant='h2'>Ramuel Batuigas</Typography>
+            <Grid item>
+              <About />
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant='h3'>
-                I build things for the web.
-              </Typography>
+            <Grid item>
+              <Portfolio />
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant='h6'>
-                I'm a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering'>Management Engineer</Link> with a knack of creating tools to make life easier.
-              </Typography>
+            <Grid item>
+              <Engineering />
             </Grid>
-            <Button variant='contained'>Contact Me</Button>
-            <Button variant='outlined'>Dowload My Resume</Button>
-          </Container>
-        </section>
-      </Grid>
-      <section id="about">
-        <Container>
-          <Grid container xs={12}>
-            <Header title='About Me'></Header>
           </Grid>
-        </Container>
-      </section>
+        </Grid>
+        <Grid item xs={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <Box sx={{ position: 'fixed' }}>
+            <Typography>Sidebar 2</Typography>
+          </Box>
+        </Grid>
+      </Grid>
+
+
     </>
   );
 }
+
+export default App;
