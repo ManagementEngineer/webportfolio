@@ -31,7 +31,7 @@ const Portfolio = () => {
                     </Grid>
                     {projects.map((project) => (
                         <Grid item xs={6}>
-                            <PortfolioCard title={project.title} image={project.image} description={project.description} />
+                            <PortfolioCard title={project.title} image={project.image} description={project.description} id={project.id} />
                         </Grid>
                     )
                     )}

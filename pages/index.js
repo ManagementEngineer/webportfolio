@@ -13,6 +13,7 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Portfolio from '../components/Portfolio';
 import Engineering from '../components/Engineering';
+import Contact from '../components/Contact';
 
 
 
@@ -26,7 +27,6 @@ const App = () => {
           <Box sx={{ position: 'fixed' }}>
             <Typography>Sidebar 1</Typography>
           </Box>
-
         </Grid>
         <Grid item xs={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
           <Grid container>
@@ -41,6 +41,9 @@ const App = () => {
             </Grid>
             <Grid item>
               <Engineering />
+            </Grid>
+            <Grid item>
+              <Contact />
             </Grid>
           </Grid>
         </Grid>

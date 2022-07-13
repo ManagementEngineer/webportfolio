@@ -128,7 +128,7 @@ const Engineering = () => {
                                         • Coordinated with fleet contractors by acting as the fleet management system administrator, responsible for troubleshooting and maintenance of York Region transit fleet buses.
                                     </Typography>
                                     <Typography>
-                                        •  Designed a new fleet management system’s front end and spearheaded User Acceptance Testing.
+                                        •  Designed a new fleet management systems front end and spearheaded User Acceptance Testing.
                                     </Typography>
                                     <Typography>
                                         • Trained more than 20 contractors and users of the new fleet management system.
@@ -188,7 +188,7 @@ const Engineering = () => {
                                         • Developed Web and Mobile automated testing using Selenium Webdriver for Android, and ChromeDriver.
                                     </Typography>
                                     <Typography>
-                                        •  Tested and documented bugs of an on-going project’s Mobile App, Database and Dashboard with the client identifying no major issue in the first two sprints of User Acceptance Testing.
+                                        •  Tested and documented bugs of an on-going projects Mobile App, Database and Dashboard with the client identifying no major issue in the first two sprints of User Acceptance Testing.
                                     </Typography>
                                     <Typography>
                                         • Coordinated with product owner and developers to ensure that the development team is updated at any phase through scrums, sprint planning and retrospective.
