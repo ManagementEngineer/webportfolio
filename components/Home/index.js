@@ -3,7 +3,7 @@ import { Grid, Typography, Button, Container, Link } from "@mui/material";
 const Home = () => {
 
     return (
-        <section id="#home">
+        <section id="home">
             <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
                 <Grid item>
                 </Grid>
@@ -23,7 +23,7 @@ const Home = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant='h6'>
-                            I'm a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering'>Management Engineer</Link> with a knack of creating tools to make life easier.
+                            I'm a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering' target="_blank" rel="noopener noreferrer">Management Engineer</Link> with a knack of creating tools to make life easier.
                         </Typography>
                     </Grid>
                     <Button variant='contained'><Typography>Contact Me</Typography></Button>

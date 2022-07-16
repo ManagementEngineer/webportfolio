@@ -24,13 +24,13 @@ const Portfolio = () => {
     ]
     return (
         <>
-            <section id="#portfolio">
-                <Grid container sx={{ margin: 2 }}>
+            <section id="portfolio">
+                <Grid container>
                     <Grid item xs={12}>
-                        <Header title='Potfolio' />
+                        <Header title='Portfolio' />
                     </Grid>
                     {projects.map((project) => (
-                        <Grid item xs={6}>
+                        <Grid item xs={6} key={project.id} sx={{ padding: 2 }}>
                             <PortfolioCard title={project.title} image={project.image} description={project.description} id={project.id} />
                         </Grid>
                     )

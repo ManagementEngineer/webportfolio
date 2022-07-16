@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Grid, Typography, keyframes } from '@mui/material';
+import { Grid, Typography, keyframes, Divider, Box } from '@mui/material';
 
 const Header = (props) => {
   const [animate, setAnimate] = useState(false);
@@ -38,7 +38,11 @@ const Header = (props) => {
 
   return (
     <>
-      <Typography text={props.title} variant='h6' align='left' />
+      <Box sx={{ margin: 5 }}>
+        <Typography text={props.title} variant='h3' align='left' > {props.title} </Typography>
+        <Divider />
+      </Box>
+
     </>
   )
 

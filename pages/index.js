@@ -14,6 +14,9 @@ import About from '../components/About';
 import Portfolio from '../components/Portfolio';
 import Engineering from '../components/Engineering';
 import Contact from '../components/Contact';
+import ScrollToTop from '../components/Utilities/ScrollToTop';
+import ToggleModeButton from '../components/Utilities/ToggleModeButton';
+
 
 
 
@@ -22,34 +25,60 @@ const App = () => {
 
   return (
     <>
-      <Grid container >
-        <Grid item xs={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <Grid container>
+        <Grid item xs={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
           <Box sx={{ position: 'fixed' }}>
-            <Typography>Sidebar 1</Typography>
+            <Button><Typography>Scroll To Top</Typography></Button>
           </Box>
         </Grid>
-        <Grid item xs={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
+        <Grid item xs={8} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
           <Grid container>
-            <Grid item>
+            <Grid item
+              component={motion.div}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
               <Home />
             </Grid>
-            <Grid item>
+            <Grid item
+              component={motion.div}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
               <About />
             </Grid>
-            <Grid item>
+            <Grid item
+              component={motion.div}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
               <Portfolio />
             </Grid>
-            <Grid item>
+            <Grid item
+              component={motion.div}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
               <Engineering />
             </Grid>
-            <Grid item>
+            <Grid item
+              component={motion.div}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
               <Contact />
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <Grid item xs={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
           <Box sx={{ position: 'fixed' }}>
-            <Typography>Sidebar 2</Typography>
+            <ScrollToTop />
+            <ToggleModeButton />
           </Box>
         </Grid>
       </Grid>

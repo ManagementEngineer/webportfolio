@@ -24,6 +24,7 @@ const IndexArt = (props) => {
                 height='100%'
                 initial='initial'
                 animate='animate'
+                overflow='visible'
             >
                 <title>flower_index</title>
                 <motion.g>
@@ -84,7 +85,7 @@ const IndexArt = (props) => {
                 {/* ----------------------------Main Flower---------------------------- */}
                 <motion.g
                     initial={{ opacity: 1 }}
-                    layoutID='flower'
+                    layoutId='flower'
                 >
                     <motion.path variants={pathVariants} d="M612.18,655.21c-21,14-41.19,29.56-63.39,41.36-14.61,7.77-32.16,10.1-48.39,14.86l-3.74.39-5.35.22-4.12.26-2.54.78-2.79-.07-13.24.09-7.4-.51-.66-1.63c7.68-3.17,15.33-6.41,23.05-9.49q62.24-24.9,124.5-49.72c2.6-1,5.23-2,7.84-3l.51,2.93Z" transform="translate(0.25 0.25)" fill="#e0d4c8" stroke="#000" strokeWidth="0.5" />
                     <motion.path variants={pathVariants} d="M609.29,644.41l-146.24,58.2C501.3,657.76,552.27,643.76,609.29,644.41Z" transform="translate(0.25 0.25)" fill="#cf265e" stroke="#000" strokeWidth="0.5" />
@@ -121,7 +122,7 @@ const IndexArt = (props) => {
                         exit={{ opacity: 0, transition: { duration: 0.2 } }}
                     >
                         {/* ----------------------------Home Petal---------------------------- */}
-                        <Link href='/'>
+                        <Link href='#home'>
                             <motion.g
                                 whileHover={{
                                     y: -120,
@@ -139,7 +140,7 @@ const IndexArt = (props) => {
 
 
                         {/* ----------------------------About Petal---------------------------- */}
-                        <Link href='/about'>
+                        <Link href='#about'>
                             <motion.g
                                 layoutId='about'
                                 whileHover={{
@@ -159,7 +160,7 @@ const IndexArt = (props) => {
 
 
                         {/* ----------------------------Portfolio Petal---------------------------- */}
-                        <Link href='/portfolio'>
+                        <Link href='#portfolio'>
                             <motion.g
                                 whileHover={{
                                     y: 120,
@@ -182,7 +183,7 @@ const IndexArt = (props) => {
                         </Link>
 
                         {/* ----------------------------Engineering Petal---------------------------- */}
-                        <Link href='/engineering'>
+                        <Link href='#engineering'>
                             <motion.g
                                 whileHover={{
                                     y: 120,
@@ -209,7 +210,7 @@ const IndexArt = (props) => {
 
 
                         {/* ----------------------------Contact Petal---------------------------- */}
-                        <Link href='/engineering'>
+                        <Link href='#contact'>
                             <motion.g
                                 whileHover={{
                                     x: -120,

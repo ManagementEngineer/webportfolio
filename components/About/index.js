@@ -5,7 +5,7 @@ import Image from 'next/image';
 const About = () => {
     return (
         <>
-            <section id="#about">
+            <section id="about">
                 <Grid container sx={{ margin: 2 }}>
                     <Grid item xs={12}>
                         <Header title='About Me' />
@@ -30,7 +30,7 @@ const About = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Image src='/static/images/og_fantasysports.png' height='100%' width='100%' layout='responsive' objectFit='contain' />
+                        <Image src='/static/images/og_fantasysports.png' height='50%' width='100%' layout='responsive' objectFit='contain' />
                     </Grid>
                 </Grid>
             </section>

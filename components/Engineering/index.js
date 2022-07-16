@@ -15,7 +15,7 @@ const Engineering = () => {
 
     return (
         <>
-            <section id="#engineering">
+            <section id="engineering">
                 <Grid container sx={{ margin: 2 }}>
                     <Grid item xs={12}>
                         <Header title='Engineering' />
@@ -40,7 +40,7 @@ const Engineering = () => {
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <Typography variant="h6" component="span">
-                                        Eat
+                                        Amazon
                                     </Typography>
                                     <Typography>Because you need strength</Typography>
                                 </TimelineContent>
