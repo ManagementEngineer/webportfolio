@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 const Sidebar = (props) => {
     return (
         <>
-            <Box sx={{ position: 'fixed' }} component={motion.div} layoutId='flower'>
+            <Box component={motion.div} layoutId='flower'>
                 <motion.svg id="Layer_1"
                     data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"

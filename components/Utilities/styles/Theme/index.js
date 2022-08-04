@@ -1,47 +1,46 @@
 import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+
 
 // Create a theme instance.
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#556cd6",
-      light: "#f1f5f9"
-    },
-    secondary: {
-      main: "rgb(0 0 0 / 54%)"
-    },
-    error: {
-      main: red.A400
-    }
-  },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 768,
-      md: 900,
-      lg: 1200,
-      xl: 1536
-    }
+    mode: 'dark'
   },
   typography: {
     fontFamily: [
-      "Lato",
-      "-apple-system",
-      "BlinkMacSystemFont",
+      'Radiance',
+      'Reaver',
+      'Arial',
+      '-apple-system',
+      'BlinkMacSystemFont',
       '"Segoe UI"',
-      "Roboto",
+      'Roboto',
       '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
+      'sans-serif',
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"'
-    ].join(","),
-    body1: {
-      fontSize: "1.125rem"
+      '"Segoe UI Symbol"',
+    ].join(','),
+    h1: {
+      fontFamily: 'ReaverBold',
+    },
+    h2: {
+      fontFamily: 'Reaver'
+    },
+    h3: {
+      fontFamily: 'RadianceBold'
+    },
+    h4: {
+      fontFamily: 'Radiance'
+    },
+    h5: {
+      fontFamily: 'Radiance'
+    },
+    h6: {
+      fontFamily: 'RadianceSemiBold',
+      fontSize: 24
     }
-  }
+  },
 });
 
 export default theme;

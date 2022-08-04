@@ -6,11 +6,11 @@ const DarkTheme = createTheme({
     palette: {
         mode: "dark",
         primary: {
-            main: "#556cd6",
-            light: "#f1f5f9"
+            main: "#2C3639",
+            light: "#2C3639"
         },
         secondary: {
-            main: "#94a3b8"
+            main: "#A27B5C"
         },
         error: {
             main: red.A400
@@ -46,9 +46,6 @@ const DarkTheme = createTheme({
             '"Segoe UI Emoji"',
             '"Segoe UI Symbol"'
         ].join(","),
-        body1: {
-            fontSize: "1.125rem"
-        }
     }
 });
 

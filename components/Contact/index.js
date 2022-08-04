@@ -69,7 +69,7 @@ const Contact = () => {
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography variant='h6' component='div' align='left' sx={{ marginBottom: 2, padding: 2 }}>
-                                    If you have any issues or suggestions, please use the contact form below:
+                                    Say Hi
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>

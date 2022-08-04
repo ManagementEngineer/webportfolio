@@ -15,9 +15,21 @@ const Portfolio = () => {
         {
             id: 2,
             title: 'Portfolio',
-            description: `An advocacy project website built using
-          MEAN stack with fact-checking tool to promote actions against
-          fake news.`,
+            description: `Asdadsadsa`,
+            alter: 'VeriTru Project',
+            image: '/static/images/og_fantasysports.png',
+        },
+        {
+            id: 3,
+            title: 'Portfolio',
+            description: `Asdadsadsa`,
+            alter: 'VeriTru Project',
+            image: '/static/images/og_fantasysports.png',
+        },
+        {
+            id: 4,
+            title: 'Portfolio',
+            description: `Asdadsadsa`,
             alter: 'VeriTru Project',
             image: '/static/images/og_fantasysports.png',
         },
@@ -30,7 +42,7 @@ const Portfolio = () => {
                         <Header title='Portfolio' />
                     </Grid>
                     {projects.map((project) => (
-                        <Grid item xs={6} key={project.id} sx={{ padding: 2 }}>
+                        <Grid item xs={12} s={12} m={4} l={4} xl={4} key={project.id} sx={{ padding: 2 }}>
                             <PortfolioCard title={project.title} image={project.image} description={project.description} id={project.id} />
                         </Grid>
                     )

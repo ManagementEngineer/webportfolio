@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <section id="about">
-                <Grid container sx={{ margin: 2 }}>
+                <Grid container sx={{ margin: 2, backgroundImage: 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg', background: 'linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.733) 100%, rgb(0, 0, 0) 100%)' }}>
                     <Grid item xs={12}>
                         <Header title='About Me' />
                     </Grid>

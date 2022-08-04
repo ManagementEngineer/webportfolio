@@ -16,66 +16,77 @@ import Engineering from '../components/Engineering';
 import Contact from '../components/Contact';
 import ScrollToTop from '../components/Utilities/ScrollToTop';
 import ToggleModeButton from '../components/Utilities/ToggleModeButton';
+import DrawerComp from '../components/DrawerComp';
+import NavBar from '../components/NavBar';
+import bg from '../public/static/images/background.jpg';
+import mainBg from '../public/static/images/main_background.jpg';
+import LeftBar from '../components/Utilities/styles/VerticalBar';
 
 
 
 
 const App = () => {
-  const theme = useTheme();
 
   return (
     <>
-      <Grid container>
-        <Grid item xs={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-          <Box sx={{ position: 'fixed' }}>
-            <Button><Typography>Scroll To Top</Typography></Button>
-          </Box>
+      <Box sx={{ width: '100%', height: 650, backgroundColor: '#00000060', position: 'absolute', transform: 'skewY(-45deg)', overflow: 'hidden' }} />
+      <Grid container sx={{ backgroundImage: `url(${bg.src})`, backgroundColor: '#000', backgroundSize: 'cover', backgroundPosition: 'center top', overflow: 'hidden' }}>
+        <NavBar />
+        <Grid item xs={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <LeftBar />
         </Grid>
-        <Grid item xs={8} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minWidth: '100vh', minHeight: '100vh' }}>
+        <Grid item xs={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
           <Grid container>
-            <Grid item
+            <Grid item xs={12}
               component={motion.div}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
+              sx={{ zIndex: 2, justifyContent: 'right' }}
             >
               <Home />
             </Grid>
-            <Grid item
+            <Grid item xs={12}
               component={motion.div}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
+              sx={{ width: '100%', height: 'fit-content', minHeight: 221, background: 'linear-gradient(80deg, #252728 0%, #101415 100%)', borderTop: '2px solid #282828', borderBottom: '2px solid #2c2e2e', boxShadow: '0px 0px 8px #000', display: 'flex', zIndex: 2 }}
             >
               <About />
             </Grid>
-            <Grid item
+            <Grid item xs={12}
               component={motion.div}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
+              sx={{ width: '100%', height: 'fit-content', minHeight: 221, background: 'linear-gradient(80deg, #252728 0%, #101415 100%)', borderTop: '2px solid #282828', borderBottom: '2px solid #2c2e2e', boxShadow: '0px 0px 8px #000', display: 'flex', zIndex: 2, margin: 2 }}
+
             >
               <Portfolio />
             </Grid>
-            <Grid item
+            <Grid item xs={12}
               component={motion.div}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
+              sx={{ width: '100%', height: 'fit-content', minHeight: 221, background: 'linear-gradient(80deg, #252728 0%, #101415 100%)', borderTop: '2px solid #282828', borderBottom: '2px solid #2c2e2e', boxShadow: '0px 0px 8px #000', display: 'flex', zIndex: 2 }}
+
             >
               <Engineering />
             </Grid>
-            <Grid item
+            <Grid item xs={12}
               component={motion.div}
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
+              sx={{ zIndex: 2 }}
             >
               <Contact />
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <Grid item xs={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
           <Box sx={{ position: 'fixed' }}>
             <ScrollToTop />
             <ToggleModeButton />

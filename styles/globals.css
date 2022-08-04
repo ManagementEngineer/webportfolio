@@ -15,3 +15,45 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Radiance';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/radiance.woff');
+}
+
+@font-face {
+  font-family: 'RadianceBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/radiance-bold.woff');
+}
+
+@font-face {
+  font-family: 'RadianceSemiBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/radiance-semibold.woff');
+}
+
+@font-face {
+  font-family: 'Reaver';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/Reaver-Regular.woff');
+}
+
+@font-face {
+  font-family: 'ReaverBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/Reaver-Bold.woff');
+}
+
+@font-face {
+  font-family: 'ReaverSemiBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/Reaver-Semibold.woff');
+}
