@@ -1,8 +1,6 @@
 import { useState, forwardRef } from "react";
 import { Typography, Link, Grid, List, ListItem, Button, TextField, Snackbar, Paper, Box } from "@mui/material";
 import Header from "../Header";
-import Image from 'next/image';
-import IndexArt from "../IndexArt/IndexArt";
 import { useForm } from 'react-hook-form';
 import MuiAlert from '@mui/material/Alert';
 import emailjs from '@emailjs/browser';
@@ -61,15 +59,15 @@ const Contact = () => {
     return (
         <>
             <section id="contact">
-                <Grid container>
+                <Grid container sx={{ backgroundImage: 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg', background: 'linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.733) 100%, rgb(0, 0, 0) 100%)' }}>
                     <Grid item xs={12}>
                         <Header title='Contact Me' />
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12}>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography variant='h6' component='div' align='left' sx={{ marginBottom: 2, padding: 2 }}>
-                                    Say Hi
+                                    My inbox is always open. Whether You have a question of just want to say hi, I'll try my best to get back to you!
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>
@@ -115,15 +113,12 @@ const Contact = () => {
                                             </Grid>
                                         </Grid>
                                         <Box sx={{ width: '100%', paddingTop: 2 }}>
-                                            <Button type='submit' variant={showSubmitButton ? 'contained' : 'disabled'}>Submit</Button>
+                                            <Button type='submit' variant={showSubmitButton ? 'contained' : 'contained'}>Submit</Button>
                                         </Box>
                                     </Grid>
                                 </form>
                             </Grid>
                         </Grid>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <IndexArt />
                     </Grid>
                 </Grid>
             </section>

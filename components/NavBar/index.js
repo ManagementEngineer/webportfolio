@@ -16,7 +16,7 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position='absolute'>
+            <AppBar position='absolute' sx={{ background: 'transparent' }}>
                 <Grid component={Container}>
                     <Toolbar disableGutters>
                         {isMatch ? (

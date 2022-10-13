@@ -7,6 +7,8 @@ const CompanySelection = (props) => {
         props.selectedWork(company);
     }
 
+    console.log(props.selectedCompany);
+
     const companies = [
         {
             id: '1',
@@ -54,13 +56,14 @@ const CompanySelection = (props) => {
                         <Grid item sx={{ margin: 2 }}>
                             <CardActionArea>
                                 <CardMedia
-                                    background='#fff'
+
                                     component='img'
-                                    height='40'
-                                    width='40'
+                                    height='60'
+                                    width='60'
                                     image={company.logo}
                                     alt={company.description}
                                     onClick={() => { handleSelectWork(company.name) }}
+                                    sx={{ filter: props.selectedCompany === company.name ? 'none' : 'grayscale(100%)' }}
                                 >
                                 </CardMedia>
                             </CardActionArea>

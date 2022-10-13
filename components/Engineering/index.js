@@ -34,7 +34,7 @@ const Engineering = () => {
                                         <EngineeringCarousel selectedWork={work} />
                                     </Grid>
                                     <Grid item xs={12}>
-                                        <CompanySelection selectedWork={setWork} />
+                                        <CompanySelection selectedWork={setWork} selectedCompany={work} />
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -44,7 +44,6 @@ const Engineering = () => {
                                 </Box>
                             </Grid>
                         </Grid>
-
                     </Grid>
                 </Grid>
             </section>
