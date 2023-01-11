@@ -27,7 +27,7 @@ const JobDescription = (props) => {
             description: [
                 '• Classified failing door components by developing a predictive maintenance tool using machine learning techniques.',
                 '• Eliminated leadscrew re-greasing problems to 0% by providing mean time between failures based on Weibull Analysis.',
-                '• Reduced initial troubleshooting times by 50% by creating extensive FMEA documents for subway train doors.'
+                '• Reduced initial troubleshooting times by creating extensive FMEA documents for subway train doors.'
 
             ]
         },

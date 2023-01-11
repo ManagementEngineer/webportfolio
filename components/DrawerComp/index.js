@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const DrawerComp = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
-    const pages = ['Generate Lottery', 'Reveal Lottery', 'About', 'Contact'];
-    const links = ['/generate', '/reveal', '/about', '/contact']
+    const pages = ['About', 'Work', 'Engineering', 'Technical Writing', 'Web', 'Contact'];
+    const links = ['#about', '#engineering', '#engineeringportfolio', '#writingportfolio', '#portfolio', '#contact']
 
     return (
         <>
@@ -18,13 +18,13 @@ const DrawerComp = () => {
             >
                 <Link href='/' passHref>
                     <Box component='a' sx={{ paddingTop: 5, paddingBottom: 2, justifyContent: 'center', display: 'flex' }}>
-                        <Image src='/images/fantasy_sports.png' width={100} height={100} alt="Fantasy League Lottery" />
+                        <Image src='/static/images/ttc_photo.jpg' width={100} height={100} alt="Ramuel Portfolio" />
                     </Box>
                 </Link>
                 <Divider />
                 <List>
                     {pages.map((page, index) => (
-                        <Link href={`${links[index]}`} passHref>
+                        <Link key={index} href={`${links[index]}`} passHref>
                             <ListItemButton component='a' onClick={() => setOpenDrawer(false)} key={index}>
                                 <ListItemIcon >
                                     <ListItemText >

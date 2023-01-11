@@ -53,7 +53,7 @@ const CompanySelection = (props) => {
             <Grid container sx={{ justifyContent: 'center', marginTop: -3, }}>
                 {
                     companies.map((company) => (
-                        <Grid item sx={{ margin: 2 }}>
+                        <Grid item sx={{ margin: 2 }} key={companies.id}>
                             <CardActionArea>
                                 <CardMedia
 

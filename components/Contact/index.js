@@ -41,7 +41,7 @@ const Contact = () => {
             message: data.message
         }
 
-        emailjs.send(`${process.env.NEXT_PUBLIC_EMAILJS_SERVICEID}`, 'template_hvys07b', templateParams, `${process.env.NEXT_PUBLIC_EMAILJS_PUBLICKEY}`)
+        emailjs.send(`service_qxa757c`, 'template_nbkuo4h', templateParams, `iskVJb_6LcN1xzehZ`)
             .then(
                 function (response) {
                     if (response.status === 200) {
@@ -59,18 +59,18 @@ const Contact = () => {
     return (
         <>
             <section id="contact">
-                <Grid container sx={{ backgroundImage: 'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg', background: 'linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.733) 100%, rgb(0, 0, 0) 100%)' }}>
+                <Grid container >
                     <Grid item xs={12}>
                         <Header title='Contact Me' />
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container>
-                            <Grid item xs={12}>
+                            <Grid item xl={6}>
                                 <Typography variant='h6' component='div' align='left' sx={{ marginBottom: 2, padding: 2 }}>
-                                    My inbox is always open. Whether You have a question of just want to say hi, I'll try my best to get back to you!
+                                    My inbox is always open. Whether you have a question of just want to say hi, I will try my best to get back to you!
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12}>
+                            <Grid item xl={6}>
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <Grid container component={Paper} direction='column' sx={{ marginBottom: 2 }}>
                                         <Grid item xl={6}>

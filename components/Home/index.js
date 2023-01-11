@@ -18,16 +18,21 @@ const Home = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant='h3' sx={{ color: '#a5e0f3' }}>
-                            I build things for the web.
+                            I build things.
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} sx={{ marginBottom: 5 }}>
                         <Typography variant='h6'>
-                            I'm a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering' target="_blank" rel="noopener noreferrer">Management Engineer</Link> with a knack of creating tools to make life easier.
+                            I am a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering' target="_blank" rel="noopener noreferrer">Management Engineering</Link> graduate with a knack of creating tools and solving problems to make life easier.
                         </Typography>
                     </Grid>
-                    <Button variant='contained' href='#contact'><Typography>Contact Me</Typography></Button>
-                    <Button variant='outlined'><Typography>Resume</Typography></Button>
+                    <Grid item>
+                        <Grid container>
+                            <Button sx={{ marginRight: 2, height: 50 }} variant='contained' href='#contact'><Typography>Contact Me</Typography></Button>
+                            <Button sx={{ marginRight: 2, height: 50 }} variant='outlined' href='https://drive.google.com/file/d/1Pq-1CivWGdYKcs-FkwqDdjArSNRs1kYu/view?usp=sharing' target="_blank"><Typography>Resume</Typography></Button>
+                        </Grid>
+                    </Grid>
+
                 </Container>
             </Grid>
         </section>

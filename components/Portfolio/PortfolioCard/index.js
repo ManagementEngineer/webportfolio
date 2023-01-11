@@ -9,11 +9,14 @@ import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
 const PortfolioCard = (props) => {
     return (
-        <Card key={props.id} sx={{ height: '100%', width: '100%', padding: 2, margin: 2 }}>
+        <Card key={props.id} sx={{ height: 600, width: '100%', padding: 2, margin: 2 }}>
             <CardMedia
                 component="img"
                 image={props.image}
                 alt={props.title}
+                height='350'
+                width='300'
+                sx={{ objectFit: 'contain' }}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -24,8 +27,8 @@ const PortfolioCard = (props) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small"><GitHubIcon fontSize='large' /></Button>
-                <Button size="small"><OpenInBrowserIcon fontSize='large' /></Button>
+                {/* <Button size="small"><GitHubIcon fontSize='large' /></Button> */}
+                <Button size="small" href={props.link} target="_blank"><OpenInBrowserIcon fontSize='large' /></Button>
             </CardActions>
         </Card>
     );

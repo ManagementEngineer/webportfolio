@@ -16,7 +16,7 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position='absolute' sx={{ background: 'transparent' }}>
+            <AppBar position='absolute'>
                 <Grid component={Container}>
                     <Toolbar disableGutters>
                         {isMatch ? (
@@ -40,11 +40,17 @@ const NavBar = () => {
                                 <Link href="#about" passHref>
                                     <Button component='a' sx={{ marginLeft: 'auto' }} variant='primary'><Typography variant='h6'>About</Typography></Button>
                                 </Link>
-                                <Link href="#portfolio" passHref>
-                                    <Button component='a' variant='primary'><Typography variant='h6'>Portfolio</Typography></Button>
-                                </Link>
                                 <Link href="#engineering" passHref>
+                                    <Button component='a' variant='primary'><Typography variant='h6'>Work</Typography></Button>
+                                </Link>
+                                <Link href="#engineeringportfolio" passHref>
                                     <Button component='a' variant='primary'><Typography variant='h6'>Engineering</Typography></Button>
+                                </Link>
+                                <Link href="#writingportfolio" passHref>
+                                    <Button component='a' variant='primary'><Typography variant='h6'>Technical Writing</Typography></Button>
+                                </Link>
+                                <Link href="#portfolio" passHref>
+                                    <Button component='a' variant='primary'><Typography variant='h6'>Web</Typography></Button>
                                 </Link>
                                 <Link href="#contact" passHref>
                                     <Button component='a' variant='primary'><Typography variant='h6'>Contact</Typography></Button>

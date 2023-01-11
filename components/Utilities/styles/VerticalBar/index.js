@@ -7,7 +7,7 @@ const LeftBar = () => {
             <Grid container sx={{ display: 'flex', flexDirection: 'row', transform: 'rotate(270deg)', alignItems: 'center', position: 'absolute', width: 800 }}>
                 <Grid item>
                     <Typography variant="h6">
-                        Ramuel Batuigas
+                        rjbatuigas@gmail.com
                     </Typography>
                 </Grid>
                 <Grid item sx={{ flexGrow: 1 }}>

@@ -24,7 +24,7 @@ const Engineering = () => {
             <section id="engineering">
                 <Grid container sx={{ margin: 2 }}>
                     <Grid item xs={12}>
-                        <Header title='Engineering' />
+                        <Header title='Work Experience' />
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container spacing={2}>
