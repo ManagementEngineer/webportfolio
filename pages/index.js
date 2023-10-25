@@ -11,9 +11,10 @@ import ScrollToTop from '../components/Utilities/ScrollToTop';
 import ToggleModeButton from '../components/Utilities/ToggleModeButton';
 import DrawerComp from '../components/DrawerComp';
 import NavBar from '../components/NavBar';
-import bg from '../public/static/images/background.jpg';
+import bg from '../public/static/images/background.png';
 import LeftBar from '../components/Utilities/styles/VerticalBar';
 import EngineeringPortfolio from '../components/EngineeringPortfolio';
+import DataAnalysisPortfolio from '../components/DataAnalysisPortfolio';
 import WritingPortfolio from '../components/WritingPortfolio';
 import Head from 'next/head';
 
@@ -57,6 +58,16 @@ const App = () => {
               <About />
             </Grid>
 
+            <Grid item xs={12}
+              component={motion.div}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+              sx={{ width: '100%', height: 'fit-content', minHeight: 221, background: 'linear-gradient(80deg, #252728 0%, #101415 100%)', borderTop: '2px solid #282828', borderBottom: '2px solid #2c2e2e', boxShadow: '0px 0px 8px #000', display: 'flex', zIndex: 2, marginBottom: 10 }}
+
+            >
+              <DataAnalysisPortfolio />
+            </Grid>
 
             <Grid item xs={12}
               component={motion.div}

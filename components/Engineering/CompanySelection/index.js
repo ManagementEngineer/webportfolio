@@ -19,7 +19,7 @@ const CompanySelection = (props) => {
         {
             id: '2',
             name: 'TTC',
-            logo: '/static/images/ttc.svg',
+            logo: '/static/images/TTC.svg',
             description: 'ttc logo'
         },
         {

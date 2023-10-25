@@ -40,6 +40,9 @@ const NavBar = () => {
                                 <Link href="#about" passHref>
                                     <Button component='a' sx={{ marginLeft: 'auto' }} variant='primary'><Typography variant='h6'>About</Typography></Button>
                                 </Link>
+                                <Link href="#daportfolio" passHref>
+                                    <Button component='a' variant='primary'><Typography variant='h6'>Data Analysis</Typography></Button>
+                                </Link>
                                 <Link href="#engineering" passHref>
                                     <Button component='a' variant='primary'><Typography variant='h6'>Work</Typography></Button>
                                 </Link>

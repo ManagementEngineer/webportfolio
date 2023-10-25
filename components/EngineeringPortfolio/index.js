@@ -25,7 +25,7 @@ const EngineeringPortfolio = () => {
             title: 'Subway Door Lead Screw Re-greasing Program Analysis',
             description: `Analysis on subway door leadscrew regreasing procedure to minimize closing speed adjustment fault on subway train doors. `,
             alter: 'Subway Door Lead Screw Re-greasing Program',
-            image: '/static/images/ttc.svg',
+            image: '/static/images/TTC.svg',
             link: 'https://drive.google.com/file/d/1diu3jHKRJUBMIYiBxUqGRG_TtK2KAgCw/view?usp=sharing'
         },
         {

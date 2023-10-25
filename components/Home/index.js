@@ -18,18 +18,18 @@ const Home = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant='h3' sx={{ color: '#a5e0f3' }}>
-                            I build things.
+                            I solve problems using data-driven solutions.
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sx={{ marginBottom: 5 }}>
                         <Typography variant='h6'>
-                            I am a <Link href='https://uwaterloo.ca/future-students/programs/management-engineering' target="_blank" rel="noopener noreferrer">Management Engineering</Link> graduate with a knack of creating tools and solving problems to make life easier.
+                        <Link href='https://uwaterloo.ca/future-students/programs/management-engineering' target="_blank" rel="noopener noreferrer">Engineering</Link> Analyst with expertise in data analysis, AI, and software development, dedicated to solving complex problems across diverse industries and driven by a passion for continuous learning.
                         </Typography>
                     </Grid>
                     <Grid item>
                         <Grid container>
                             <Button sx={{ marginRight: 2, height: 50 }} variant='contained' href='#contact'><Typography>Contact Me</Typography></Button>
-                            <Button sx={{ marginRight: 2, height: 50 }} variant='outlined' href='https://drive.google.com/file/d/1Pq-1CivWGdYKcs-FkwqDdjArSNRs1kYu/view?usp=sharing' target="_blank"><Typography>Resume</Typography></Button>
+                            <Button sx={{ marginRight: 2, height: 50 }} variant='outlined' href='https://drive.google.com/file/d/1r_jq8V_k6dj8KVOd6XrocYbUuxmdlOMu/view?usp=sharing' target="_blank"><Typography>Resume</Typography></Button>
                         </Grid>
                     </Grid>
 

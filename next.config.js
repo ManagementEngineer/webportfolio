@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     loader: 'imgix',
     path: 'https://cdn.cloudflare.steamstatic.com/',
+    future: { webpack5: true }
   },
 }
 

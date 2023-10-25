@@ -23,7 +23,7 @@ const JobDescription = (props) => {
             name: 'TTC',
             companyName: 'Toronto Transit Commission',
             role: 'Reliability Engineer',
-            logo: '/static/images/ttc.svg',
+            logo: '/static/images/TTC.svg',
             description: [
                 '• Classified failing door components by developing a predictive maintenance tool using machine learning techniques.',
                 '• Eliminated leadscrew re-greasing problems to 0% by providing mean time between failures based on Weibull Analysis.',
